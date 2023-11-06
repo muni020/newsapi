@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/final_log-removebg-preview.png">
+    <title>News App</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="left">
+            <a href="#">
+                <img src="./final_log-removebg-preview.png" style="height:50px; alt="">
+            </a>
+        </div>
+        <div class=" center">
+                <li class="nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+        </div>
+        <div class="right">
+            <input type="search" name="" id="input">
+            <button id="btn" onclick="onSearch()">Search</button>
+        </div>
+    </nav>
+    <div class="main" id="cards-container">
+        <!-- here cards will be displayed individually -->
+    </div>
+    <!-- Diplaying Number of News Which Its Fetch -->
+    <div id="displayNewsNumber">
+
+    </div>
+    <!-- this is template of a card in which data from api will be render -->
+    <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="./final_log-removebg-preview.png" alt="" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">Title of News</h3>
+                    <h6 id="news-source">End Gadet 20/08/2023</h6>
+                    <p id="news-desc">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+    </template>
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
